@@ -1,0 +1,43 @@
+.orders__responsive {
+  overflow: auto;
+}
+
+.orders__table {
+  width: 100%;
+  background-color: var(--clr-white);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.orders__table .btn {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+.orders__table th,
+.orders__table td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.orders__table td {
+  color: var(--colorBlack);
+  font-weight: 500;
+}
+
+.orders__table td .status {
+  border-radius: 999px;
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  padding: 5px 0;
+}
+
+.orders__table th {
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+}
+
+.orders__table tr + tr {
+  border-top: 1px solid #dddddd;
+}

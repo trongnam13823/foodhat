@@ -1,0 +1,71 @@
+.topbar {
+  background: var(--clr-secondary);
+  height: var(--height-topbar);
+}
+
+.topbar-contact {
+  column-gap: 30px;
+  position: relative;
+}
+
+.topbar-contact::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--clr-primary);
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  z-index: 0;
+}
+
+.topbar-contact a {
+  color: var(--clr-white);
+  line-height: var(--height-topbar);
+  position: relative;
+  z-index: 1;
+  transition: 0.3s linear;
+  white-space: nowrap;
+}
+
+.topbar-contact a:hover {
+  color: var(--clr-secondary);
+}
+
+.topbar-contact i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.topbar-social {
+  column-gap: 10px;
+}
+
+.topbar-social a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--clr-primary);
+  transition: 0.3s linear;
+}
+
+.topbar-social a:hover {
+  background-color: var(--clr-white);
+}
+
+.topbar-social a:hover i {
+  color: var(--clr-primary);
+}
+
+.topbar-social i {
+  color: var(--clr-white);
+  font-size: 14px;
+  line-height: 30px;
+  transition: 0.3s linear;
+}
+
+@media (max-width: 991.98px) {
+  .topbar-contact::after {
+    display: none;
+  }
+}

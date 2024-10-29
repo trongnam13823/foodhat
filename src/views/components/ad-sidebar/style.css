@@ -1,0 +1,26 @@
+.admin-sidebar li.active,
+.admin-sidebar li:hover {
+  background-color: var(--bs-info-bg-subtle);
+}
+
+.admin-sidebar li.active a {
+  font-weight: bold;
+}
+
+.admin-sidebar li a {
+  display: block;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 12px !important;
+}
+
+.action-edit:hover {
+  color: var(--bs-info);
+}
+
+.action-delete:hover {
+  color: var(--bs-danger);
+}
